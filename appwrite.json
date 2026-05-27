@@ -1,1 +1,11 @@
-
+{
+    "name": "send-email",
+    "runtime": "node-18.0",
+    "entrypoint": "src/main.js",
+    "events": [
+        "databases.6a142da00005f285bb3b.collections.customers.documents.*.create",
+        "databases.6a142da00005f285bb3b.collections.service_requests.documents.*.create",
+        "databases.6a142da00005f285bb3b.collections.service_requests.documents.*.update"
+    ],
+    "timeout": 15
+}
